@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Potdar Jewellers - Elegant Jewellery for Every Occasion. Premium gold, silver, diamond jewelry collections including rings, necklaces, earrings and bridal sets.">
+    <meta name="keywords" content="jewelry, jewellery, gold, silver, diamond, rings, necklaces, earrings, bridal, Potdar Jewellers">
+    <meta name="author" content="Potdar Jewellers">
+    <title>Potdar Jewellers - Elegant Jewellery for Every Occasion</title>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shop.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#home" class="logo">Potdar Jewellers</a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#products">Featured Products</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search jewelry..." id="searchInput">
+                <button class="search-btn" type="button" onclick="searchProducts()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Potdar Jewellers</h1>
+            <p class="fade-in">Elegant Jewellery for Every Occasion</p>
+            <a href="#collections" class="btn-primary fade-in">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">About Us</h2>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p>For over three decades, Potdar Jewellers has been synonymous with exquisite craftsmanship and timeless elegance. Our legacy began with a simple vision: to create jewelry that celebrates life's most precious moments.</p>
+                    
+                    <p>We specialize in traditional Indian jewelry, contemporary designs, and bespoke pieces that reflect your unique style. Every piece in our collection is carefully curated and crafted by skilled artisans who understand the art of jewelry making.</p>
+                    
+                    <p>From traditional gold ornaments to modern diamond sets, from silver jewelry to exclusive bridal collections, we offer an extensive range that caters to every taste and occasion. Our commitment to quality, authenticity, and customer satisfaction has made us a trusted name in the jewelry industry.</p>
+                </div>
+                <div class="about-image fade-in">
+                    <img src="https://images.unsplash.com/photo-1601821765780-754fa98637c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Jewelry crafting process" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section id="collections" class="section" style="background: var(--background-light);">
+        <div class="container">
+            <h2 class="section-title fade-in">Our Collections</h2>
+            <div class="collections-grid">
+                <div class="collection-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gold Rings Collection" loading="lazy">
+                    <div class="collection-info">
+                        <h3>Rings</h3>
+                        <p>Elegant rings for every occasion</p>
+                        <div class="price">Starting from ₹15,000</div>
+                    </div>
+                </div>
+
+                <div class="collection-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gold Necklaces Collection" loading="lazy">
+                    <div class="collection-info">
+                        <h3>Necklaces</h3>
+                        <p>Traditional and modern necklace designs</p>
+                        <div class="price">Starting from ₹25,000</div>
+                    </div>
+                </div>
+
+                <div class="collection-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gold Earrings Collection" loading="lazy">
+                    <div class="collection-info">
+                        <h3>Earrings</h3>
+                        <p>Beautiful earrings for every style</p>
+                        <div class="price">Starting from ₹8,000</div>
+                    </div>
+                </div>
+
+                <div class="collection-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Silver Jewelry Collection" loading="lazy">
+                    <div class="collection-info">
+                        <h3>Silver Collection</h3>
+                        <p>Premium silver jewelry pieces</p>
+                        <div class="price">Starting from ₹3,000</div>
+                    </div>
+                </div>
+
+                <div class="collection-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Bridal Jewelry Collection" loading="lazy">
+                    <div class="collection-info">
+                        <h3>Bridal Collection</h3>
+                        <p>Exquisite bridal jewelry sets</p>
+                        <div class="price">Starting from ₹85,000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured Products</h2>
+            <div class="products-grid" id="productsGrid">
+                <div class="product-card fade-in" data-name="Diamond Solitaire Ring">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Diamond Solitaire Ring" loading="lazy">
+                    <div class="product-info">
+                        <h4>Diamond Solitaire Ring</h4>
+                        <div class="product-price">₹45,000</div>
+                        <button class="btn-secondary" onclick="enquireProduct('Diamond Solitaire Ring')">Enquire Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in" data-name="Gold Temple Necklace">
+                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Gold Temple Necklace" loading="lazy">
+                    <div class="product-info">
+                        <h4>Gold Temple Necklace</h4>
+                        <div class="product-price">₹85,000</div>
+                        <button class="btn-secondary" onclick="enquireProduct('Gold Temple Necklace')">Enquire Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in" data-name="Pearl Drop Earrings">
+                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Pearl Drop Earrings" loading="lazy">
+                    <div class="product-info">
+                        <h4>Pearl Drop Earrings</h4>
+                        <div class="product-price">₹12,000</div>
+                        <button class="btn-secondary" onclick="enquireProduct('Pearl Drop Earrings')">Enquire Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in" data-name="Silver Oxidized Bracelet">
+                    <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Silver Oxidized Bracelet" loading="lazy">
+                    <div class="product-info">
+                        <h4>Silver Oxidized Bracelet</h4>
+                        <div class="product-price">₹5,500</div>
+                        <button class="btn-secondary" onclick="enquireProduct('Silver Oxidized Bracelet')">Enquire Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in" data-name="Bridal Kundan Set">
+                    <img src="https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Bridal Kundan Set" loading="lazy">
+                    <div class="product-info">
+                        <h4>Bridal Kundan Set</h4>
+                        <div class="product-price">₹1,25,000</div>
+                        <button class="btn-secondary" onclick="enquireProduct('Bridal Kundan Set')">Enquire Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in" data-name="Gold Chain Bracelet">
+                    <img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Gold Chain Bracelet" loading="lazy">
+                    <div class="product-info">
+                        <h4>Gold Chain Bracelet</h4>
+                        <div class="product-price">₹28,000</div>
+                        <button class="btn-secondary" onclick="enquireProduct('Gold Chain Bracelet')">Enquire Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in" data-name="Diamond Stud Earrings">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Diamond Stud Earrings" loading="lazy">
+                    <div class="product-info">
+                        <h4>Diamond Stud Earrings</h4>
+                        <div class="product-price">₹35,000</div>
+                        <button class="btn-secondary" onclick="enquireProduct('Diamond Stud Earrings')">Enquire Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in" data-name="Traditional Bangles Set">
+                    <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Traditional Bangles Set" loading="lazy">
+                    <div class="product-info">
+                        <h4>Traditional Bangles Set</h4>
+                        <div class="product-price">₹18,000</div>
+                        <button class="btn-secondary" onclick="enquireProduct('Traditional Bangles Set')">Enquire Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <h2 class="section-title fade-in">What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Potdar Jewellers made my wedding day even more special with their exquisite bridal collection. The quality and craftsmanship are exceptional. Highly recommended!"
+                    </p>
+                    <div class="testimonial-author">- Priya Sharma</div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "I've been a loyal customer for over 10 years. Their traditional designs and modern collection both are outstanding. Great customer service too!"
+                    </p>
+                    <div class="testimonial-author">- Rajesh Patel</div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Bought my engagement ring from Potdar Jewellers and it's absolutely beautiful. The staff helped me choose the perfect piece within my budget."
+                    </p>
+                    <div class="testimonial-author">- Anita Desai</div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Amazing collection of silver jewelry! The prices are reasonable and the quality is top-notch. Will definitely shop here again."
+                    </p>
+                    <div class="testimonial-author">- Meera Singh</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-form fade-in">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your jewelry requirements..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info fade-in">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Nanded, Maharastra</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 98765 43210</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@potdarjewellers.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon - Sat: 10:00 AM - 8:00 PM<br>Sunday: 11:00 AM - 6:00 PM</span>
+                    </div>
+
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <span style="margin-left: 10px;">Google Maps Integration Placeholder</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://facebook.com/potdarjewellers" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://instagram.com/potdarjewellers" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/potdarjewellers" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://youtube.com/potdarjewellers" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Potdar Jewellers. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="shop.js">
+    </script>
+</body>
+</html>
